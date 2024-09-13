@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.MongoDatabaseFactory;
 import org.springframework.data.mongodb.MongoTransactionManager;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
@@ -20,6 +22,7 @@ public class RestApiApplication{
 	public PlatformTransactionManager add(MongoDatabaseFactory dbFactory){
 		return new MongoTransactionManager(dbFactory);
 	}
+
 
 
 }

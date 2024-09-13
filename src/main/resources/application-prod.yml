@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      database: rest_api
+      uri: mongodb+srv://se202013:SpringBoot@cluster0.utmef.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      index-creation: true
+server:
+  port: 8080
+

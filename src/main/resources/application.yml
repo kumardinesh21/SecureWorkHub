@@ -1,0 +1,10 @@
+spring :
+  profiles:
+    active: dev
+logging:
+  level:
+    org.springframework.mail: DEBUG
+    org.springframework.mail.javamail: DEBUG
+
+
+
